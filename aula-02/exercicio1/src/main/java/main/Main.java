@@ -15,23 +15,12 @@ public class Main {
         System.out.println("Digite o numero maximo: ");
         numeroMax = scanner.nextInt();
 
-
         for (int i = numeroMin; i < numeroMax; i++){
             if(primo(i) && i !=1){
                 primos.add(i);
             }
 
         }
-
-        /*
-        * for (int i = 0; i < 100; i++){
-        * for(int j = 2; j < i; j++){
-        *   if(i%j != 0){
-        *    primos.add(i);
-        * }
-        * }
-        }
-        * */
         for (int num : primos){
             System.out.printf("[%d]", num);
         }
@@ -43,13 +32,5 @@ public class Main {
             }
         }
         return true;
-
-        /*
-        * for(int j = 2; j < n; j++){
-            if(n % j != 0){
-                return true;
-            }
-        }
-        return false;*/
     }
 }

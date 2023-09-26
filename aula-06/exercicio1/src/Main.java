@@ -38,7 +38,9 @@ public class Main {
                    }
                }
             }else if(opt == 3){
-                pilhaLivro.removeAllElements();
+                while(!pilhaLivro.isEmpty()){
+                    pilhaLivro.pop();
+                }
                 System.out.println("Livros removidos!!!!");
             }
         }

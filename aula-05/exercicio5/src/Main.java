@@ -24,9 +24,9 @@ public class Main {
                 Arquivo arquivo = new Arquivo(nomeArquivo, numeroFolhas);
                 impressora.add(arquivo);
             }else if(opt == 2 && !impressora.isEmpty()){
-                System.out.println("Iniciando a impressao do arquivo " + impressora.getLast().getNome());
-                System.out.println("N de folhas: " + impressora.getLast().getFolhas());
-                impressora.removeLast();
+                System.out.println("Iniciando a impressao do arquivo " + impressora.getFirst().getNome());
+                System.out.println("N de folhas: " + impressora.getFirst().getFolhas());
+                impressora.removeFirst();
                 TimeUnit.SECONDS.sleep(4);
                 System.out.println("Impressao concluida");
             }

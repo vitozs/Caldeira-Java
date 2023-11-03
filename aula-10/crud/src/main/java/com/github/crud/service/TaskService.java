@@ -23,11 +23,16 @@ public class TaskService {
     }
 
     public void deleteTask(int id){
-        taskModelList.remove(id-1);
+        if(id > 0){
+            taskModelList.remove(id-1);
+        }
+
     }
 
     public void edit(int id, TaskModel task) {
         task.setId(id);
-        taskModelList.set(id-1, task);
+        if(id > 0){
+            taskModelList.set(id-1, task);
+        }
     }
 }

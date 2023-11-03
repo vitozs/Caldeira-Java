@@ -1,13 +1,11 @@
 package com.github.crud.model;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Data
 public class TaskModel {
@@ -21,6 +19,6 @@ public class TaskModel {
     boolean concluida;
 
     @NotNull(message = "data necessaria")
-    Date dataVencimento;
+    LocalDate dataVencimento;
 
 }
